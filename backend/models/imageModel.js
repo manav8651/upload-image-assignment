@@ -11,11 +11,11 @@ const imageSchema = new mongoose.Schema(
       required: true,
     },
     size: Number,
-    uploader: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
-      required: true,
-    },
+    // uploader: {
+    //   type: mongoose.Schema.Types.ObjectId,
+    //   ref: "User",
+    //   required: true,
+    // },
   },
   { timestamps: true }
 );

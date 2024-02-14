@@ -16,7 +16,7 @@ const Signup = () => {
         e.preventDefault();
         try {
             const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/users/signup`, userData);
-            console.log(response.data);
+            console.log(response.status);
         } catch (error) {
             console.error(error.response.data);
         }

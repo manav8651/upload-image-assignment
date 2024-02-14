@@ -24,7 +24,7 @@ exports.uploadImage = (req, res) => {
       filename: req.file.filename,
       filepath: req.file.path,
       size: req.file.size,
-      uploader: req.user._id 
+      // uploader: req.user._id 
     });
 
     newImage.save()

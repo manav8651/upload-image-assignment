@@ -20,11 +20,11 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  uploader: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Image",
-    required: true,
-  },
+  // uploader: {
+  //   // type: mongoose.Schema.Types.ObjectId,
+  //   // ref: "Image",
+  //   // required: true,
+  // },
 });
 
 userSchema.pre("save", async function (next) {

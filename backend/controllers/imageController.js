@@ -11,7 +11,6 @@ const storage = multer.diskStorage({
   }
 });
 
-// const upload = multer({ storage: storage });
 
 const upload = multer({ storage: storage }).single('image'); 
 
@@ -24,7 +23,7 @@ exports.uploadImage = (req, res) => {
       filename: req.file.filename,
       filepath: req.file.path,
       size: req.file.size,
-      // uploader: req.user._id 
+      uploader: req.user._id 
     });
 
     newImage.save()
